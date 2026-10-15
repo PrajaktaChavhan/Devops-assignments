@@ -2,7 +2,7 @@
 # ========================================================
 # Linux Basics - Lab Assignment
 # Name: Prajakta Chavan
-# Repository: https://github.com/PrajaktaChavan/linux-basics-assignment
+# Repository : https://github.com/PrajaktaChavan/Devops-assignments
 # ========================================================
 
 # Task 1: Creating and Renaming Files/Directories
