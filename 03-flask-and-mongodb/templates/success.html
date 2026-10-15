@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Successful | DevOps Lab</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="card success-card">
+            <div class="success-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+            </div>
+            
+            <h2 class="success-title">Data submitted successfully</h2>
+            <p class="success-desc">Your record has been successfully inserted into MongoDB Atlas.</p>
+
+            <div class="actions">
+                <a href="/" class="btn btn-primary">&larr; Submit Another Record</a>
+                <a href="/api" class="btn btn-secondary" target="_blank">View JSON API</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

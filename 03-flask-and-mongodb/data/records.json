@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Prajakta Chavan",
+    "email": "prajakta@example.com",
+    "course": "DevOps & Cloud Engineering",
+    "status": "Enrolled"
+  },
+  {
+    "id": 2,
+    "name": "Aarav Sharma",
+    "email": "aarav@example.com",
+    "course": "Kubernetes Fundamentals",
+    "status": "Enrolled"
+  },
+  {
+    "id": 3,
+    "name": "Sneha Patel",
+    "email": "sneha@example.com",
+    "course": "Linux Systems Administration",
+    "status": "Completed"
+  },
+  {
+    "id": 4,
+    "name": "Rohan Deshmukh",
+    "email": "rohan@example.com",
+    "course": "Continuous Integration with Jenkins",
+    "status": "In Progress"
+  }
+]

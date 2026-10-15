@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration | DevOps Lab</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2>Student Registration Form</h2>
+                <p>Submit your details to store directly in MongoDB Atlas</p>
+            </div>
+
+            {% if error %}
+            <div class="alert alert-error">
+                <span class="badge">ERROR</span>
+                <span>{{ error }}</span>
+            </div>
+            {% endif %}
+
+            <form action="/" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" value="{{ name or '' }}" placeholder="Enter full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" value="{{ email or '' }}" placeholder="Enter email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course / Track *</label>
+                    <input type="text" id="course" name="course" value="{{ course or '' }}" placeholder="e.g. DevOps & Cloud Engineering" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit to MongoDB Atlas</button>
+            </form>
+
+            <div class="card-footer">
+                <a href="/api" target="_blank">View Task 1 JSON API (/api) &rarr;</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
