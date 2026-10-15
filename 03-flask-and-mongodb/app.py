@@ -11,7 +11,7 @@ load_dotenv()
 app = Flask(__name__)
 
 # MongoDB Atlas Configuration
-MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://student:student123@cluster0.mongodb.net/devops_db?retryWrites=true&w=majority")
+MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://<username>:<password>@cluster0.mongodb.net/devops_db?retryWrites=true&w=majority")
 DB_NAME = os.getenv("DB_NAME", "devops_db")
 COLLECTION_NAME = os.getenv("COLLECTION_NAME", "users")
 
